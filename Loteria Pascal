@@ -1,0 +1,18 @@
+program SorteioDezenas;
+
+var
+  i, dezena: Integer;
+
+begin
+  Randomize; // Inicializa o gerador de números aleatórios
+  
+  WriteLn('Sorteio de 6 dezenas entre 0 e 60:');
+  
+  for i := 1 to 6 do
+  begin
+    dezena := Random(61); // Gera um número aleatório entre 0 e 60
+    Write(dezena, ' '); // Imprime o número sorteado
+  end;
+  
+  ReadLn; // Aguarda uma tecla ser pressionada para encerrar o programa
+end.
